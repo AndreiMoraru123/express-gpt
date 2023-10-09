@@ -36,7 +36,7 @@ app.post('/api/general', async (req, res) => {
         model: "gpt-4",
         messages: [{role: "user", content: body.prompt}],
     });
-    res.json (completion.data.choices[0].message);
+    res.json (completion.data.choices[0].message.content);
 });
 
 app.post('/api/image', async (req, res) => {

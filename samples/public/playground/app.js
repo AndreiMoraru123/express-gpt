@@ -11,6 +11,4 @@ async function send() {
     })
     const output = await response.json();
     document.querySelector("output").textContent = output;
-
-
 }
